@@ -6,7 +6,7 @@ NOTE: Requires SPM12 toolbox. We are not responsible for the use of this code. U
 
 Keep tuned! We will make available a friendly GUI in a future research work!
 
-**** scADSpain_preproc_parfor.m - data preprocessing ****
+CODE **** scADSpain_preproc_parfor.m - data preprocessing ****
 
 1. Read the ELEKTA-Neuromag "fif" file and read it using SPM toobox, which generates an object containing the data.
 2. Data is downsample to 200 Hz using an SPM function: "spm_eeg_downsample".
@@ -16,11 +16,11 @@ Keep tuned! We will make available a friendly GUI in a future research work!
 
 NOTE: Some variables have to be setup accordingly to read your data, for all the subjects
 
-**** spm_coreg.m - semi-automatic MRI-MEG coregistration tool ****
+CODE **** spm_coreg.m - semi-automatic MRI-MEG coregistration tool ****
 
 NOTE: It is used only inside "scADSpain_preproc_parfor" as part of the coregistration process.
 
-**** scADSpain_invsol_parfor.m - estimate the source activity ****
+CODE **** scADSpain_invsol_parfor.m - estimate the source activity ****
 
 1. Reads the SPM12 object containing participants data.
 2. Pass-band data filtering using SPM12 function "spm_eeg_filter".
@@ -28,13 +28,13 @@ NOTE: It is used only inside "scADSpain_preproc_parfor" as part of the coregistr
 4. FFT analysis per segment.
 5. FFT coefficients saved to hard-disk for post-hoc FC analysis
 
-**** scADSpain_sourceFC_parfor.m - Run the source FC analysis ****
+CODE **** scADSpain_sourceFC_parfor.m - Run the source FC analysis ****
 
 1. FC analysis per frequency or frequency band (uncomment code as suits your needs)
 2. Estimate imaginary coherence (iCOH) and the EIC method, other methods can be inserted in the code as needed.
 3. Save the outcome to hard-disk
 
-**** scADSpain_clustperm_indsel_parfor.m - Run the cluster-permutation analysis ****
+CODE **** scADSpain_clustperm_indsel_parfor.m - Run the cluster-permutation analysis ****
 
 This script is controlled by several flag variables to control the running of particular cell code. The flag variables are:
 
@@ -45,10 +45,10 @@ This script is controlled by several flag variables to control the running of pa
 
 NOTE: Users have to specify the particular thresholds for the upper and lower distribution tails, correspondingly to the rank-sum, or correlation analyses, accordingly with its particular dataset and analysis.
 
-**** plot_bsurfconn_spm.m - Provide visualization of FC map for spm template surface ****
+CODE **** plot_bsurfconn_spm.m - Provide visualization of FC map for spm template surface ****
 
 NOTE: It is used only inside "scADSpain_clustperm_indsel_parfor".
 
-**** plot_bsurfconn.m - Provide visualization of FC map for generic surfaces ****
+CODE **** plot_bsurfconn.m - Provide visualization of FC map for generic surfaces ****
 
 NOTE: It is used only inside "plot_bsurfconn_spm".
