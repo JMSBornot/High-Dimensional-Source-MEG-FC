@@ -1,6 +1,6 @@
 # High-Dimensional-Source-MEG-FC
 
-These scripts and functions are a template. Some code is designed to run using a parallel cluster in Matlab (parfor). Frequently, analysis are run for all the subjects automatically. However, variables should be modify to reflect your directory path accordingly, and also your other information associated with your particular analyses.
+These scripts and functions are a template. Some code is designed to run using a parallel cluster in Matlab (parfor). Frequently, analysis are run for all the subjects automatically. However, variables should be modify to reflect your directory path accordingly, and other information associated with particular analyses.
 
 NOTE: Requires SPM12 toolbox. We are not responsible for the use of this code. Users will have to modify it to their particular interests.
 
